@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "Abhiram Kilaru",
+      "dateOfBirth": "2023-04-04",
+      "gender": "male",
+      "state": "telengana",
+      "feedback": "gfhj",
+      "id": 1
+    },
+    {
+      "username": "kilaruabhiram2003@gmail.com",
+      "dateOfBirth": "2023-04-18",
+      "gender": "male",
+      "state": "telengana",
+      "feedback": "fdghjbk",
+      "id": 2
+    }
+  ]
+}
