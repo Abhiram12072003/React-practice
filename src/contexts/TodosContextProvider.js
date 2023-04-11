@@ -1,14 +1,16 @@
 import { createContext,useState } from "react";
-import AddToDo from "../components/AddToDo";
 
 //Create context
 export let todosContext=createContext();
 
 //create context provider
 function TodosContextProvider({children}){
-    let [todos,setTodos] = useState([])
+    let [todos,setTodos] = useState([]);
+    let addNewTodo = (todo) => {
+        setTodos([...todos,todo]);
+    }
     return(
-        <todosContext.Provider value={[todos,setTodos]}>
+        <todosContext.Provider value={[todos,addNewTodo]}>
             {children}
         </todosContext.Provider>
     )

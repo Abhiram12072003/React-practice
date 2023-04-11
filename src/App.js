@@ -35,9 +35,18 @@ function App() {
       {/* <FetchData /> */}
       {/* <Formdemo/> */}
       <div className='row text-center border p-1 m-2'>
-        <div className='col-3'> <AddToDo sendTasks={getTasks}/> </div>
-        <div className='col-3'> <ToDoList tasks={tasks}/> </div>
-        <div className='col-3'> <ToDoCount cnt={tasks.length}/> </div>
+        <div className='col-3'> 
+          {/* <AddToDo sendTasks={getTasks}/>  */}
+          <AddToDo />
+        </div>
+        <div className='col-3'>
+          {/* <ToDoList tasks={tasks}/>  */}
+          <ToDoList />
+        </div>
+        <div className='col-3'>
+          {/* <ToDoCount cnt={tasks.length}/> */}
+          <ToDoCount />
+        </div>
         {/* {
           tasks.map((elem,idx)=><div key={idx}>{elem}</div>)
         } */}
